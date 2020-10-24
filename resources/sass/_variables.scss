@@ -1,0 +1,40 @@
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$blue: #0d6efd;
+$indigo: #6610f2;
+$purple: #6f42c1;
+
+$primary: $indigo;
+
+$enable-transitions: false;
+
+$body-bg: hsl(hue($primary), 5%, 92%);
+$body-color: hsl(hue($primary), 10%, 32%);
+
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+$border-color: hsl(hue($primary), 10%, 74%);
+
+$font-family-sans-serif: Nunito, sans-serif;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px
+);
+
+$text-muted: hsl(hue($primary), 5%, 64%);
+
+$btn-font-weight: 700;
+
+$card-border-width: 0;

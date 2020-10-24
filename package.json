@@ -1,0 +1,17 @@
+{
+    "devDependencies": {
+        "bootstrap": "^5.0.0-alpha2",
+        "laravel-mix": "^6.0.0-beta.11",
+        "postcss": "^8.1.4",
+        "sass": "^1.27.0",
+        "sass-loader": "^8.0.2"
+    },
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "private": true
+}
