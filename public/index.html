@@ -33,35 +33,9 @@
         </div>
         <script src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
         <script>
-            (function () {
-                function createFunctionWithTimeout(callback, timeoutInMilliseconds) {
-                    console.log('Calling createFunctionWithTimeout', {
-                        'callback': callback,
-                        'timeoutInMilliseconds': timeoutInMilliseconds
-                    });
-                    var called = false;
-                    function fn() {
-                        if (!called) {
-                            called = true;
-                            callback();
-                        }
-                    }
-                    setTimeout(fn, timeoutInMilliseconds || 1000);
-                    return fn;
-                }
-
-                var form = document.getElementById('subForm');
-
-                form.addEventListener('submit', function (event) {
-                    event.preventDefault();
-
-                    gtag('event', 'generate_lead', {
-                        'event_callback': createFunctionWithTimeout(function () {
-                            subForm.submit();
-                        })
-                    });
-                });
-            })();
+            document.getElementById('subForm').addEventListener('submit', function () {
+                gtag('event', 'generate_lead');
+            });
         </script>
     </body>
 </html>
